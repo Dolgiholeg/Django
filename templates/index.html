@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+<body>
+    <h1>Главная страница</h1>
+    <img src="{% static 'img/Merkury.png' %}" alt="" width="800px">
+    <footer>
+{#        <a href="month">РАБОТНИК МЕСЯЦА</a>#}
+        <a href="{% url 'url1' id=0 %}">РАБОТНИК МЕСЯЦА</a>
+        <a href="{% url 'url1' id=1 %}">РАБОТНИК МЕСЯЦА</a>
+        <a href="{% url 'url1' id=2 %}">РАБОТНИК МЕСЯЦА</a>
+        <a href="{% url 'url2' id=0 %}">ПОДУКТ1</a>
+        <a href="{% url 'url2' id=1 %}">ПОДУКТ2</a>
+        <a href="{% url 'url2' id=2 %}">ПОДУКТ3</a>
+        <hr>
+        <a href="{% url 'spisok' %}">Кто с нами работает</a>
+    </footer>
+</body>
+</html>
